@@ -26,8 +26,8 @@ export class LessonService {
     }
 
     const lesson = this.lessonReposiory.create({
-      name,
       id: uuidv4(),
+      name,
       startDate,
       endDate,
     });
