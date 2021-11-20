@@ -22,7 +22,7 @@ export class StudentService {
     });
 
     try {
-      return this.studentRepository.save(student);
+      return await this.studentRepository.save(student);
     } catch (err) {
       throw new InternalServerErrorException();
     }
